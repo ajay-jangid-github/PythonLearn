@@ -1,7 +1,6 @@
 ✅ 1. Class Kya Hai?
 python
-Copy
-Edit
+
 class RideBook:
 class RideBook: se aap ek class define kar rahe ho jiska naam hai RideBook.
 
@@ -11,8 +10,7 @@ Is class ka purpose hai ek ride ka data store karna aur ride ko start karna.
 
 ✅ 2. Constructor ( __init__ method )
 python
-Copy
-Edit
+
    def __init__(self, ride_name, pickup, location):
       self.ride_name = ride_name
       self.pickup = pickup
@@ -27,8 +25,7 @@ Ye method 3 values lega: ride_name, pickup, location aur unko object ke andar st
 
 ✅ 3. Instance Method: start_ride
 python
-Copy
-Edit
+
    def start_ride(self):
       print(f"Starting ride {self.ride_name} from {self.pickup} to {self.location}")
 Ye method object ki information use karke ride start karne ka message print karega.
@@ -37,8 +34,7 @@ Ye method bhi self use karta hai to access the object’s data (i.e., ride_name,
 
 ✅ 4. Object Kya Hai? Kaise Banaya?
 python
-Copy
-Edit
+
 start1 = RideBook("Ajay", "vivek vihar", "mansarover")
 Yahaan start1 ek object hai jo RideBook class ka instance hai.
 
@@ -47,8 +43,7 @@ Jab aap RideBook() likhte ho, to __init__() method call hota hai aur data self m
 Matlab:
 
 python
-Copy
-Edit
+
 start1.ride_name = "Ajay"
 start1.pickup = "vivek vihar"
 start1.location = "mansarover"
@@ -61,9 +56,6 @@ Yahaan aap start1 object ka method start_ride() call kar rahe ho.
 
 Isse output aayega:
 
-css
-Copy
-Edit
 Starting ride Ajay from vivek vihar to mansarover
 ✅ 6. Concepts Summary:
 Concept	Description
