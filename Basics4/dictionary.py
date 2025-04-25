@@ -19,5 +19,5 @@ print(student.keys()) # print the keys of the dictionary
 print(student.values()) # print the values of the dictionary
 print(student.items()) # print the items of the dictionary
 print(student.get("name")) # print the value of the key "name"
-student["name"] = "Jogn doe"
+student["name"] = "Jogn doe"  
 print(student["name"]) # print the updated value of the key "name"

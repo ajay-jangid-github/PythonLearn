@@ -18,4 +18,4 @@ b = False
 # print(a or b) # or
 
 print( not a or b) # not 
-print( not b) # not
+# print( not b) # not

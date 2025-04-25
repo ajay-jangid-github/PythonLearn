@@ -10,6 +10,6 @@ num = int(input("koi number dalo:"))
 if num > 0:
   print("positive number")
 elif num < 0:
- print("negative number")
+  print("negative number")
 else:
   print("yh zero hai")
