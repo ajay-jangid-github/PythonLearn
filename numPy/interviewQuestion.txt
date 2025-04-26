@@ -1,0 +1,62 @@
+💼 🔥 Interview-Level Technical Questions (on NumPy Operations)
+🔸 Q1: What is broadcasting in NumPy? Can you give an example where it works and where it fails?
+Answer: Broadcasting allows NumPy to perform operations on arrays of different shapes.
+Example that works:
+
+python
+
+a = np.array([1, 2, 3])        # Shape: (3,)
+b = 2                          # Scalar
+print(a + b)                   # [3 4 5]
+Fails:
+
+python
+
+a = np.array([[1, 2], [3, 4]])  # Shape: (2,2)
+b = np.array([1, 2, 3])         # Shape: (3,)
+a + b                          # ❌ ValueError: shapes not aligned
+🔸 Q2: What is the difference between np.dot() and * operator in NumPy?
+Answer:
+
+* performs element-wise multiplication.
+
+np.dot() performs matrix multiplication.
+
+python
+
+a = np.array([[1, 2], [3, 4]])
+b = np.array([[5, 6], [7, 8]])
+
+print(a * b)       # Element-wise
+print(np.dot(a,b)) # Matrix multiplication
+🔸 Q3: How is NumPy faster than Python lists for numerical operations?
+Answer:
+
+NumPy uses vectorized operations implemented in C.
+
+Python lists use interpreted loops, which are slow.
+
+NumPy uses contiguous memory blocks, enhancing cache efficiency.
+
+🔸 Q4: How does NumPy handle data type consistency in arrays?
+Answer: All elements in a NumPy array are of the same data type (homogeneous).
+If you mix types:
+
+python
+
+np.array([1, 2.5, '3']) → array(['1', '2.5', '3'], dtype='<U32')
+It will upcast to the most general type (string here).
+
+🔸 Q5: What happens when you divide an integer NumPy array by another array?
+Answer: NumPy returns a float array if any division leads to non-integers.
+
+python
+
+a = np.array([1, 2, 3])
+b = np.array([2, 2, 2])
+print(a / b)  # [0.5 1.0 1.5] → dtype: float64
+🧠 Pro Tip (for interviews):
+
+Interviewers often test edge cases with shape mismatches or dtype conversions.
+
+Make sure to quote real examples and mention broadcasting logic (like matching from the rightmost dimensions).
