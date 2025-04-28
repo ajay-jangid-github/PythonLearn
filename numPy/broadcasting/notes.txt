@@ -1,0 +1,17 @@
+Broadcasting Rules:
+Dimensions compare karte hain right se left.
+
+Dimensions:
+
+Same hone chahiye ya
+
+Kisi ek dimension ka size = 1 hona chahiye.
+
+Tabhi Broadcasting possible hota hai.
+
+------------------------------------------
+Broadcasting memory-efficient hota hai (copy nahi banata, view deta hai).
+
+Image Processing, Data Normalization, ML Models mein heavy use hota hai.
+
+Interview mein example dekar puchte hain: "Kaise small array ko large array ke sath operate karoge?"
